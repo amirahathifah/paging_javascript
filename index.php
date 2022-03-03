@@ -10,7 +10,7 @@ $(document).ready(function() {
     var category = $("#category").val();
     var vendor_id = $("#vendor_id").val();
 
-    $.get("ajax_product.php", {
+    $.get("standalone.php", {
         paging: datapaging,
         category: category,
         vendor_id:vendor_id,
@@ -28,7 +28,7 @@ $(document).ready(function() {
 
         $("#paging").val(pagingnext);
 
-        $.get("ajax_product.php", {
+        $.get("standalone.php", {
             paging: datapaging,
             category: category,
             vendor_id:vendor_id
@@ -57,7 +57,7 @@ $(document).ready(function() {
 
         $("#paging").val(pagingnext);
 
-        $.get("ajax_product.php", {
+        $.get("standalone.php", {
             paging: datapaging,
             category: category,
             vendor_id:vendor_id
@@ -86,7 +86,7 @@ $(document).ready(function() {
 
         $("#paging").val(pagingprevious);
 
-        $.get("ajax_product.php", {
+        $.get("standalone.php", {
             paging: datapaging,
             category: category,
             vendor_id:vendor_id,
